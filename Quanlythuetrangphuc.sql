@@ -45,6 +45,8 @@ CREATE TABLE HoaDon(
 	on delete cascade,
 	TenKH nvarchar(50) NOT NULL,
 	NgayTao nvarchar(25) NULL,
+	NgayThue nvarchar(25) NULL,
+	NgayTra nvarchar(25) NULL,
 	TongTien int NULL,
 	CONSTRAINT PK_HoaDon PRIMARY KEY (MaHD)
 )
@@ -86,7 +88,7 @@ INSERT INTO TaiKhoan values
 ('NV03', '321', 2)
 go
 INSERT INTO HoaDon values
-('HD01', 'NV02', N'Đặng Thị Mỹ Hòa', '21/11/2023', 800000)
+('HD01', 'NV02', N'Đặng Thị Mỹ Hòa', '21/11/2023', '21/11/2023', '24/11/2023', 800000)
 go
 INSERT INTO ChiTietHoaDon values
 ('HD01', 'TP02', 5, 120000),
