@@ -51,6 +51,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.tb_SoLuongThue = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dt_NgayTao = new System.Windows.Forms.DateTimePicker();
+            this.bt_themTP = new System.Windows.Forms.Button();
+            this.bt_LuuHD = new System.Windows.Forms.Button();
             this.bt_HoaDonMoi = new System.Windows.Forms.Button();
             this.GV_ChiTietHD = new System.Windows.Forms.DataGridView();
             this.gb_ThongTinHD.SuspendLayout();
@@ -216,6 +218,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tb_DonGia
             // 
+            // tb_DonGia
+            // 
             this.tb_DonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_DonGia.Location = new System.Drawing.Point(678, 202);
             this.tb_DonGia.Name = "tb_DonGia";
@@ -301,6 +305,31 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.dt_NgayTao.Size = new System.Drawing.Size(284, 26);
             this.dt_NgayTao.TabIndex = 13;
             this.dt_NgayTao.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // bt_themTP
+            // 
+            this.bt_themTP.BackColor = System.Drawing.Color.Green;
+            this.bt_themTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_themTP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_themTP.Location = new System.Drawing.Point(878, 425);
+            this.bt_themTP.Name = "bt_themTP";
+            this.bt_themTP.Size = new System.Drawing.Size(197, 53);
+            this.bt_themTP.TabIndex = 25;
+            this.bt_themTP.Text = "Thêm trang phục";
+            this.bt_themTP.UseVisualStyleBackColor = false;
+            this.bt_themTP.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // bt_LuuHD
+            // 
+            this.bt_LuuHD.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bt_LuuHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_LuuHD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_LuuHD.Location = new System.Drawing.Point(512, 426);
+            this.bt_LuuHD.Name = "bt_LuuHD";
+            this.bt_LuuHD.Size = new System.Drawing.Size(111, 47);
+            this.bt_LuuHD.TabIndex = 24;
+            this.bt_LuuHD.Text = "Lưu";
+            this.bt_LuuHD.UseVisualStyleBackColor = false;
             // 
             // bt_HoaDonMoi
             // 
