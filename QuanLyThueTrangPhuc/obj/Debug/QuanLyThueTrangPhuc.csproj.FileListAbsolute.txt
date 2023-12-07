@@ -7,30 +7,13 @@ D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTra
 D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.pdb
 D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.exe
 D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.pdb
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe.config
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.pdb
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.AssemblyReference.cache
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.Form1.resources
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.Properties.Resources.resources
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.GenerateResource.cache
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.CoreCompileInputs.cache
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.exe
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.pdb
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.ChiTietHoaDon.resources
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.QuanLyHoaDon.resources
-D:\CNTT\XML\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.DoiMatKhau.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe.config
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.pdb
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.AssemblyReference.cache
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.ChiTietHoaDon.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.DangNhap.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.DoiMatKhau.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.QuanLyDanhMuc.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.QuanLyHoaDon.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.Properties.Resources.resources
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.GenerateResource.cache
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.CoreCompileInputs.cache
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.exe
-D:\My Hoa\Nam 3 - HK 1\CNXML\Cuoi ky\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.pdb
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.AssemblyReference.cache
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.GiaoDien.QuanLyChung.resources
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.Properties.Resources.resources
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.GenerateResource.cache
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.csproj.CoreCompileInputs.cache
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.exe
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\obj\Debug\QuanLyThueTrangPhuc.pdb
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe.config
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.exe
+D:\HK123\XML\CUỐI KỲ\Nhom15_XML\QuanLyThueTrangPhuc\bin\Debug\QuanLyThueTrangPhuc.pdb
