@@ -40,8 +40,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label6 = new System.Windows.Forms.Label();
             this.tb_MaNV = new System.Windows.Forms.TextBox();
             this.gb_ThongTinHD = new System.Windows.Forms.GroupBox();
-            this.bt_themTP = new System.Windows.Forms.Button();
-            this.bt_LuuHD = new System.Windows.Forms.Button();
             this.tb_DonGia = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dt_NgayThue = new System.Windows.Forms.DateTimePicker();
@@ -190,31 +188,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.gb_ThongTinHD.TabIndex = 2;
             this.gb_ThongTinHD.TabStop = false;
             this.gb_ThongTinHD.Text = "Thông tin hóa đơn";
-            // 
-            // bt_themTP
-            // 
-            this.bt_themTP.BackColor = System.Drawing.Color.Green;
-            this.bt_themTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_themTP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_themTP.Location = new System.Drawing.Point(878, 419);
-            this.bt_themTP.Name = "bt_themTP";
-            this.bt_themTP.Size = new System.Drawing.Size(197, 53);
-            this.bt_themTP.TabIndex = 25;
-            this.bt_themTP.Text = "Thêm trang phục";
-            this.bt_themTP.UseVisualStyleBackColor = false;
-            this.bt_themTP.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // bt_LuuHD
-            // 
-            this.bt_LuuHD.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bt_LuuHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_LuuHD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_LuuHD.Location = new System.Drawing.Point(512, 419);
-            this.bt_LuuHD.Name = "bt_LuuHD";
-            this.bt_LuuHD.Size = new System.Drawing.Size(111, 47);
-            this.bt_LuuHD.TabIndex = 24;
-            this.bt_LuuHD.Text = "Lưu";
-            this.bt_LuuHD.UseVisualStyleBackColor = false;
             // 
             // tb_DonGia
             // 

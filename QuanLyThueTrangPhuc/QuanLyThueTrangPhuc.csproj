@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GiaoDien\ChiTietHoaDon.cs">
+    <Compile Include="GiaoDien\QuanLyChung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GiaoDien\ChiTietHoaDon.Designer.cs">
@@ -65,6 +66,7 @@
     <Compile Include="GiaoDien\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\menuStrip.cs" />
     <Compile Include="GiaoDien\QuanLyDanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,7 +78,37 @@
     </Compile>
     <Compile Include="GiaoDien\QuanLyHoaDon.Designer.cs">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    <Compile Include="GiaoDien\QuanLyChung.Designer.cs">
+      <DependentUpon>QuanLyChung.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\QuanLySanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\QuanLySanPham.Designer.cs">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Chung.cs" />
+    <Compile Include="Model\ConnectFile.cs" />
+    <Compile Include="Model\Dangnhap.cs" />
+    <Compile Include="Model\DanhMuc.cs" />
+    <Compile Include="Model\HeThong.cs" />
+    <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\MatKhau.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
+    <Compile Include="Model\TrangPhuc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GiaoDien\ChiTietHoaDon.resx">
@@ -93,6 +125,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\QuanLyChung.resx">
+      <DependentUpon>QuanLyChung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\QuanLySanPham.resx">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,12 +161,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\lg1.png" />
     <Content Include="Resources\lg2.png" />
+    <Content Include="Resources\user.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%293.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%292.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%291.png" />
@@ -133,6 +176,27 @@
     <None Include="Resources\Pink Photo Background Sale Instagram Post.png" />
     <None Include="Resources\lg22.png" />
     <None Include="Resources\lg21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoadon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taikhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
