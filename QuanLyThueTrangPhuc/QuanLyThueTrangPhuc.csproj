@@ -66,6 +66,7 @@
     <Compile Include="GiaoDien\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\menuStrip.cs" />
     <Compile Include="GiaoDien\QuanLyDanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +99,16 @@
     <Compile Include="GiaoDien\QuanLyTaiKhoan.Designer.cs">
       <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Chung.cs" />
+    <Compile Include="Model\ConnectFile.cs" />
+    <Compile Include="Model\Dangnhap.cs" />
+    <Compile Include="Model\DanhMuc.cs" />
+    <Compile Include="Model\HeThong.cs" />
+    <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\MatKhau.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
+    <Compile Include="Model\TrangPhuc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GiaoDien\ChiTietHoaDon.resx">
@@ -150,12 +161,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\lg1.png" />
     <Content Include="Resources\lg2.png" />
+    <Content Include="Resources\user.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%293.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%292.png" />
     <None Include="Resources\Neutral Fashion Mockup Promotion Facebook Cover %282%291.png" />
