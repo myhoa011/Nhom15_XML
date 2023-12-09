@@ -1,4 +1,4 @@
-﻿using BAITAPCUOIKY.Class;
+﻿using QuanLyThueTrangPhuc.GiaoDien;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -43,9 +43,9 @@ namespace QuanLyThueTrangPhuc.Model
             return true;
         }
 
-        public void themPN(string maHd, string tenKH, string maSP, string maNV, string soluong, string dongia, string ngaylap,string ngaythue, string ngaytra, int tongtien)
+        public void themPN(string maHd, string tenKH, string maTP, string maNV, string soluong, string dongia, string ngaylap, string ngaythue, string ngaytra, int tongtien)
         {
-            themCTHD(maHd, maSP, soluong, dongia);
+            themCTHD(maHd, maTP, soluong, dongia);
             string HoaDon = "<HoaDon>" +
                     "<MaHD>" + maHd + "</MaHD>" +
                     "<MaNV>" + maNV + "</MaNV>" +
@@ -58,7 +58,7 @@ namespace QuanLyThueTrangPhuc.Model
             Fxml.Them("HoaDon.xml", HoaDon);
         }
 
-        public void themCTHD(string maHd, string maSP, string soluong, string dongia)
+        public void themCTHD(string maHd, string maTP, string soluong, string dongia)
         {
             int soluongSP = 0;
             if (soluongSP > 0)
@@ -70,14 +70,14 @@ namespace QuanLyThueTrangPhuc.Model
             {
                 string ChiTietHoaDon = "<ChiTietHoaDon>" +
                         "<MaDH>" + maHd + "</MaDH>" +
-                        "<MaTP>" + maSP + "</MaTP>" +
+                        "<MaTP>" + maTP + "</MaTP>" +
                         "<soLuongDat>" + soluong + "</soLuongDat>" +
                         "<donGia>" + dongia + "</donGia>" +
                         "</ChiTietHoaDon>";
                 Fxml.Them("ChiTietHoaDon.xml", ChiTietHoaDon);
             }
             capNhatTongTien(maHd, soluong, dongia);
-            capNhatSoluongCon(maSP, Int32.Parse(soluong));
+            capNhatSoluongCon(maTP, Int32.Parse(soluong));
 
         }
 
@@ -98,7 +98,7 @@ namespace QuanLyThueTrangPhuc.Model
             {
                 DataTable dt = new DataTable();
                 dt = Fxml.HienThi("ChiTietHoaDon.xml");
-                dt.DefaultView.RowFilter = "maDH ='" + maDH + "' AND maTP ='" + maTP + "'";
+                dt.DefaultView.RowFilter = "MaDH ='" + maDH + "' AND MaTP ='" + maTP + "'";
                 if (dt.DefaultView.Count > 0)
                     return false;
             }
@@ -134,7 +134,7 @@ namespace QuanLyThueTrangPhuc.Model
             XmlNode node1 = doc1.SelectSingleNode("//HoaDon[MaHD = '" + maHd + "']");
             if (node1 != null)
             {
-                node1.ChildNodes[4].InnerText = thanhtien.ToString();
+                node1.ChildNodes[6].InnerText = thanhtien.ToString();
                 doc1.Save(Application.StartupPath + "\\HoaDon.xml");
             }
         }
@@ -142,14 +142,14 @@ namespace QuanLyThueTrangPhuc.Model
         public void capNhatSoluongCon(string maTP, int soluong)
         {
             // tìm số lượng sản phẩm còn
-            int soluongcon = ChiTiet_HoaDon.soluongcon - soluong;
+            int soluongcon = ChiTietHoaDon.soluongcon - soluong;
             XmlDocument doc1 = new XmlDocument();
-            doc1.Load(Application.StartupPath + "\\SanPham.xml");
-            XmlNode node1 = doc1.SelectSingleNode("//TrangPhuc[maTP = '" + maTP + "']");
+            doc1.Load(Application.StartupPath + "\\TrangPhuc.xml");
+            XmlNode node1 = doc1.SelectSingleNode("//TrangPhuc[MaTP = '" + maTP + "']");
             if (node1 != null)
             {
                 node1.ChildNodes[4].InnerText = soluongcon.ToString();
-                doc1.Save(Application.StartupPath + "\\SanPham.xml");
+                doc1.Save(Application.StartupPath + "\\TrangPhuc.xml");
             }
         }
     }

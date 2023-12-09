@@ -32,23 +32,17 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1 = new System.Windows.Forms.Label();
             this.lblTen = new System.Windows.Forms.Label();
             this.lblChucVu = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vềChúngTôiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sQLXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xMLSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBoxDanhMuc = new System.Windows.Forms.PictureBox();
             this.pictureBoxNhanvien = new System.Windows.Forms.PictureBox();
             this.pictureBoxTaikhoan = new System.Windows.Forms.PictureBox();
             this.pictureBoxSanpham = new System.Windows.Forms.PictureBox();
             this.pictureBoxHoadon = new System.Windows.Forms.PictureBox();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDanhMuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanvien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTaikhoan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSanpham)).BeginInit();
@@ -71,7 +65,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.lblTen.AutoSize = true;
             this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblTen.Location = new System.Drawing.Point(12, 128);
+            this.lblTen.Location = new System.Drawing.Point(100, 125);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(82, 25);
             this.lblTen.TabIndex = 1;
@@ -82,77 +76,11 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.lblChucVu.AutoSize = true;
             this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChucVu.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblChucVu.Location = new System.Drawing.Point(12, 157);
+            this.lblChucVu.Location = new System.Drawing.Point(100, 154);
             this.lblChucVu.Name = "lblChucVu";
             this.lblChucVu.Size = new System.Drawing.Size(99, 25);
             this.lblChucVu.TabIndex = 2;
             this.lblChucVu.Text = "Chức vụ:";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Linen;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tàiKhoảnToolStripMenuItem,
-            this.dữLiệuToolStripMenuItem,
-            this.vềChúngTôiToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 28);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tàiKhoảnToolStripMenuItem
-            // 
-            this.tàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.đăngXuấtToolStripMenuItem});
-            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
-            this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
-            // 
-            // dữLiệuToolStripMenuItem
-            // 
-            this.dữLiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sQLXMLToolStripMenuItem,
-            this.xMLSQLToolStripMenuItem});
-            this.dữLiệuToolStripMenuItem.Name = "dữLiệuToolStripMenuItem";
-            this.dữLiệuToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.dữLiệuToolStripMenuItem.Text = "Dữ liệu";
-            // 
-            // vềChúngTôiToolStripMenuItem
-            // 
-            this.vềChúngTôiToolStripMenuItem.Name = "vềChúngTôiToolStripMenuItem";
-            this.vềChúngTôiToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
-            this.vềChúngTôiToolStripMenuItem.Text = "Về chúng tôi";
-            // 
-            // đổiMậtKhẩuToolStripMenuItem
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng  xuất";
-            // 
-            // sQLXMLToolStripMenuItem
-            // 
-            this.sQLXMLToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
-            this.sQLXMLToolStripMenuItem.Name = "sQLXMLToolStripMenuItem";
-            this.sQLXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.sQLXMLToolStripMenuItem.Text = "SQL -> XML";
-            // 
-            // xMLSQLToolStripMenuItem
-            // 
-            this.xMLSQLToolStripMenuItem.BackColor = System.Drawing.Color.Linen;
-            this.xMLSQLToolStripMenuItem.Name = "xMLSQLToolStripMenuItem";
-            this.xMLSQLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.xMLSQLToolStripMenuItem.Text = "XML -> SQL";
             // 
             // label2
             // 
@@ -172,16 +100,16 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
             this.label3.Location = new System.Drawing.Point(710, 407);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 25);
+            this.label3.Size = new System.Drawing.Size(203, 25);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Quản lý Sản phẩm";
+            this.label3.Text = "Quản lý Trang phục";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(710, 664);
+            this.label4.Location = new System.Drawing.Point(885, 664);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(189, 25);
             this.label4.TabIndex = 12;
@@ -192,33 +120,58 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(274, 664);
+            this.label5.Location = new System.Drawing.Point(100, 664);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(190, 25);
             this.label5.TabIndex = 14;
             this.label5.Text = "Quản lý Nhân viên";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkRed;
+            this.label6.Location = new System.Drawing.Point(493, 664);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(190, 25);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Quản lý Danh mục";
+            // 
+            // pictureBoxDanhMuc
+            // 
+            this.pictureBoxDanhMuc.BackColor = System.Drawing.Color.Linen;
+            this.pictureBoxDanhMuc.Image = global::QuanLyThueTrangPhuc.Properties.Resources.danhmuc;
+            this.pictureBoxDanhMuc.Location = new System.Drawing.Point(440, 488);
+            this.pictureBoxDanhMuc.Name = "pictureBoxDanhMuc";
+            this.pictureBoxDanhMuc.Size = new System.Drawing.Size(290, 164);
+            this.pictureBoxDanhMuc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDanhMuc.TabIndex = 13;
+            this.pictureBoxDanhMuc.TabStop = false;
+            this.pictureBoxDanhMuc.Click += new System.EventHandler(this.pictureBoxDanhMuc_Click);
+            // 
             // pictureBoxNhanvien
             // 
             this.pictureBoxNhanvien.BackColor = System.Drawing.Color.Linen;
             this.pictureBoxNhanvien.Image = global::QuanLyThueTrangPhuc.Properties.Resources.nhanvien;
-            this.pictureBoxNhanvien.Location = new System.Drawing.Point(221, 488);
+            this.pictureBoxNhanvien.Location = new System.Drawing.Point(47, 488);
             this.pictureBoxNhanvien.Name = "pictureBoxNhanvien";
             this.pictureBoxNhanvien.Size = new System.Drawing.Size(290, 164);
             this.pictureBoxNhanvien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxNhanvien.TabIndex = 13;
             this.pictureBoxNhanvien.TabStop = false;
+            this.pictureBoxNhanvien.Click += new System.EventHandler(this.pictureBoxNhanvien_Click);
             // 
             // pictureBoxTaikhoan
             // 
             this.pictureBoxTaikhoan.BackColor = System.Drawing.Color.Linen;
             this.pictureBoxTaikhoan.Image = global::QuanLyThueTrangPhuc.Properties.Resources.taikhoan;
-            this.pictureBoxTaikhoan.Location = new System.Drawing.Point(657, 488);
+            this.pictureBoxTaikhoan.Location = new System.Drawing.Point(832, 488);
             this.pictureBoxTaikhoan.Name = "pictureBoxTaikhoan";
             this.pictureBoxTaikhoan.Size = new System.Drawing.Size(290, 164);
             this.pictureBoxTaikhoan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTaikhoan.TabIndex = 11;
             this.pictureBoxTaikhoan.TabStop = false;
+            this.pictureBoxTaikhoan.Click += new System.EventHandler(this.pictureBoxTaikhoan_Click);
             // 
             // pictureBoxSanpham
             // 
@@ -230,6 +183,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.pictureBoxSanpham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSanpham.TabIndex = 9;
             this.pictureBoxSanpham.TabStop = false;
+            this.pictureBoxSanpham.Click += new System.EventHandler(this.pictureBoxSanpham_Click);
             // 
             // pictureBoxHoadon
             // 
@@ -241,6 +195,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.pictureBoxHoadon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHoadon.TabIndex = 5;
             this.pictureBoxHoadon.TabStop = false;
+            this.pictureBoxHoadon.Click += new System.EventHandler(this.pictureBoxHoadon_Click);
             // 
             // QuanLyChung
             // 
@@ -248,6 +203,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1174, 753);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureBoxDanhMuc);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBoxNhanvien);
             this.Controls.Add(this.label4);
@@ -259,12 +216,10 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.Controls.Add(this.lblChucVu);
             this.Controls.Add(this.lblTen);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "QuanLyChung";
             this.Text = "Trang chủ";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.QuanLyChung_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDanhMuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanvien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTaikhoan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSanpham)).EndInit();
@@ -280,14 +235,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Label lblChucVu;
         private System.Windows.Forms.PictureBox pictureBoxHoadon;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dữLiệuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sQLXMLToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xMLSQLToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vềChúngTôiToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBoxSanpham;
@@ -295,5 +242,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         private System.Windows.Forms.PictureBox pictureBoxTaikhoan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBoxNhanvien;
+        private System.Windows.Forms.PictureBox pictureBoxDanhMuc;
+        private System.Windows.Forms.Label label6;
     }
 }

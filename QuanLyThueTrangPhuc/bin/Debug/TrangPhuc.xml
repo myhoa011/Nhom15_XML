@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<TrangPhucs>
+  <TrangPhuc>
+    <MaTP>TP01</MaTP>
+    <TenTP>Trang phục dân tộc Thái</TenTP>
+    <donGia>100000</donGia>
+    <soLuong>20</soLuong>
+    <MaDM>2</MaDM>
+  </TrangPhuc>
+  <TrangPhuc>
+    <MaTP>TP02</MaTP>
+    <TenTP>Trang phục dân tộc Mường</TenTP>
+    <donGia>120000</donGia>
+    <soLuong>15</soLuong>
+    <MaDM>2</MaDM>
+  </TrangPhuc>
+  <TrangPhuc>
+    <MaTP>TP03</MaTP>
+    <TenTP>Trang phục áo bà ba</TenTP>
+    <donGia>50000</donGia>
+    <soLuong>30</soLuong>
+    <MaDM>2</MaDM>
+  </TrangPhuc>
+  <TrangPhuc>
+    <MaTP>TP04</MaTP>
+    <TenTP>Áo cử nhân mầm non</TenTP>
+    <donGia>80000</donGia>
+    <soLuong>10</soLuong>
+    <MaDM>1</MaDM>
+  </TrangPhuc>
+  <TrangPhuc>
+    <MaTP>TP05</MaTP>
+    <TenTP>Áo dài trẻ em</TenTP>
+    <donGia>100000</donGia>
+    <soLuong>12</soLuong>
+    <MaDM>1</MaDM>
+  </TrangPhuc>
+</TrangPhucs>

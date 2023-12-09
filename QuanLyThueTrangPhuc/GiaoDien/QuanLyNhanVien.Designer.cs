@@ -29,7 +29,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.btnIn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tbTNV = new System.Windows.Forms.TextBox();
@@ -40,6 +40,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label2 = new System.Windows.Forms.Label();
             this.tbMNV = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.btnLammoi = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
             this.tbTK = new System.Windows.Forms.TextBox();
@@ -48,31 +50,36 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bt_Huy = new System.Windows.Forms.Button();
+            this.bt_Luu = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvNhanVien
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(124, 564);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 177);
-            this.dataGridView1.TabIndex = 24;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Location = new System.Drawing.Point(124, 564);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.RowHeadersWidth = 51;
+            this.dgvNhanVien.RowTemplate.Height = 24;
+            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvNhanVien.Size = new System.Drawing.Size(933, 177);
+            this.dgvNhanVien.TabIndex = 24;
+            this.dgvNhanVien.SelectionChanged += new System.EventHandler(this.dgvNhanVien_SelectionChanged);
             // 
             // btnIn
             // 
             this.btnIn.BackColor = System.Drawing.Color.RosyBrown;
             this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnIn.Location = new System.Drawing.Point(551, 470);
+            this.btnIn.Location = new System.Drawing.Point(620, 499);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(157, 46);
+            this.btnIn.Size = new System.Drawing.Size(181, 46);
             this.btnIn.TabIndex = 23;
             this.btnIn.Text = "In danh sách";
             this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // label7
             // 
@@ -86,6 +93,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tbTNV
             // 
+            this.tbTNV.Enabled = false;
             this.tbTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTNV.Location = new System.Drawing.Point(179, 96);
             this.tbTNV.Name = "tbTNV";
@@ -96,7 +104,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 201);
+            this.label4.Location = new System.Drawing.Point(38, 242);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 5;
@@ -104,8 +112,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tbEmail
             // 
+            this.tbEmail.Enabled = false;
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.Location = new System.Drawing.Point(179, 198);
+            this.tbEmail.Location = new System.Drawing.Point(179, 239);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(446, 30);
             this.tbEmail.TabIndex = 4;
@@ -114,7 +123,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(38, 151);
+            this.label3.Location = new System.Drawing.Point(38, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 20);
             this.label3.TabIndex = 3;
@@ -122,8 +131,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tbSDT
             // 
+            this.tbSDT.Enabled = false;
             this.tbSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSDT.Location = new System.Drawing.Point(179, 148);
+            this.tbSDT.Location = new System.Drawing.Point(179, 189);
             this.tbSDT.Name = "tbSDT";
             this.tbSDT.Size = new System.Drawing.Size(446, 30);
             this.tbSDT.TabIndex = 2;
@@ -140,6 +150,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tbMNV
             // 
+            this.tbMNV.Enabled = false;
             this.tbMNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMNV.Location = new System.Drawing.Point(179, 50);
             this.tbMNV.Name = "tbMNV";
@@ -149,6 +160,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Linen;
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.tbDiaChi);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.tbTNV);
             this.groupBox1.Controls.Add(this.label4);
@@ -160,10 +173,29 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(124, 180);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(675, 258);
+            this.groupBox1.Size = new System.Drawing.Size(675, 301);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sản phẩm";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(38, 146);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Địa chỉ";
+            // 
+            // tbDiaChi
+            // 
+            this.tbDiaChi.Enabled = false;
+            this.tbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDiaChi.Location = new System.Drawing.Point(179, 143);
+            this.tbDiaChi.Name = "tbDiaChi";
+            this.tbDiaChi.Size = new System.Drawing.Size(446, 30);
+            this.tbDiaChi.TabIndex = 12;
             // 
             // btnLammoi
             // 
@@ -176,6 +208,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnLammoi.TabIndex = 17;
             this.btnLammoi.Text = "Làm mới";
             this.btnLammoi.UseVisualStyleBackColor = false;
+            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
             // 
             // btnTim
             // 
@@ -188,6 +221,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnTim.TabIndex = 16;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // tbTK
             // 
@@ -213,7 +247,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(360, 15);
+            this.label1.Location = new System.Drawing.Point(360, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 46);
             this.label1.TabIndex = 13;
@@ -221,7 +255,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.LightGray;
+            this.btnSua.BackColor = System.Drawing.Color.Salmon;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSua.Image = global::QuanLyThueTrangPhuc.Properties.Resources.update;
@@ -230,10 +264,11 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnSua.Size = new System.Drawing.Size(116, 46);
             this.btnSua.TabIndex = 21;
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.LightGray;
+            this.btnXoa.BackColor = System.Drawing.Color.Salmon;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnXoa.Image = global::QuanLyThueTrangPhuc.Properties.Resources.delete_file;
@@ -242,10 +277,11 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnXoa.Size = new System.Drawing.Size(116, 46);
             this.btnXoa.TabIndex = 20;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.LightGray;
+            this.btnThem.BackColor = System.Drawing.Color.Salmon;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThem.Image = global::QuanLyThueTrangPhuc.Properties.Resources.add2;
@@ -254,6 +290,35 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.btnThem.Size = new System.Drawing.Size(116, 46);
             this.btnThem.TabIndex = 19;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // bt_Huy
+            // 
+            this.bt_Huy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bt_Huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Huy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Huy.Location = new System.Drawing.Point(387, 498);
+            this.bt_Huy.Name = "bt_Huy";
+            this.bt_Huy.Size = new System.Drawing.Size(111, 47);
+            this.bt_Huy.TabIndex = 42;
+            this.bt_Huy.Text = "Hủy";
+            this.bt_Huy.UseVisualStyleBackColor = false;
+            this.bt_Huy.Visible = false;
+            this.bt_Huy.Click += new System.EventHandler(this.bt_Huy_Click);
+            // 
+            // bt_Luu
+            // 
+            this.bt_Luu.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Luu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Luu.Location = new System.Drawing.Point(124, 498);
+            this.bt_Luu.Name = "bt_Luu";
+            this.bt_Luu.Size = new System.Drawing.Size(111, 47);
+            this.bt_Luu.TabIndex = 41;
+            this.bt_Luu.Text = "Lưu";
+            this.bt_Luu.UseVisualStyleBackColor = false;
+            this.bt_Luu.Visible = false;
+            this.bt_Luu.Click += new System.EventHandler(this.bt_Luu_Click);
             // 
             // QuanLyNhanVien
             // 
@@ -261,7 +326,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1174, 753);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.bt_Huy);
+            this.Controls.Add(this.bt_Luu);
+            this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.btnIn);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
@@ -274,7 +341,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.Controls.Add(this.label1);
             this.Name = "QuanLyNhanVien";
             this.Text = "Quản lý Nhân viên";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -284,7 +352,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
@@ -303,5 +371,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         private System.Windows.Forms.TextBox tbTK;
         private System.Windows.Forms.Label lblTen;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbDiaChi;
+        private System.Windows.Forms.Button bt_Huy;
+        private System.Windows.Forms.Button bt_Luu;
     }
 }

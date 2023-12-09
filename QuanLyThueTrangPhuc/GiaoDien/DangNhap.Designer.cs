@@ -67,6 +67,7 @@ namespace QuanLyThueTrangPhuc
             // tb_TaiKhoan
             // 
             this.tb_TaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_TaiKhoan.ForeColor = System.Drawing.Color.Maroon;
             this.tb_TaiKhoan.Location = new System.Drawing.Point(600, 165);
             this.tb_TaiKhoan.Name = "tb_TaiKhoan";
             this.tb_TaiKhoan.Size = new System.Drawing.Size(284, 30);
@@ -75,10 +76,12 @@ namespace QuanLyThueTrangPhuc
             // tb_MatKhau
             // 
             this.tb_MatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_MatKhau.ForeColor = System.Drawing.Color.Maroon;
             this.tb_MatKhau.Location = new System.Drawing.Point(600, 235);
             this.tb_MatKhau.Name = "tb_MatKhau";
             this.tb_MatKhau.Size = new System.Drawing.Size(284, 30);
             this.tb_MatKhau.TabIndex = 4;
+            this.tb_MatKhau.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -103,6 +106,7 @@ namespace QuanLyThueTrangPhuc
             this.bt_DangNhap.TabIndex = 5;
             this.bt_DangNhap.Text = "Đăng nhập";
             this.bt_DangNhap.UseVisualStyleBackColor = false;
+            this.bt_DangNhap.Click += new System.EventHandler(this.bt_DangNhap_Click);
             // 
             // cb_HienMatKhau
             // 
@@ -115,6 +119,7 @@ namespace QuanLyThueTrangPhuc
             this.cb_HienMatKhau.TabIndex = 6;
             this.cb_HienMatKhau.Text = "Hiển thị mật khẩu";
             this.cb_HienMatKhau.UseVisualStyleBackColor = false;
+            this.cb_HienMatKhau.CheckedChanged += new System.EventHandler(this.cb_HienMatKhau_CheckedChanged);
             // 
             // linkLabel1
             // 
@@ -147,6 +152,7 @@ namespace QuanLyThueTrangPhuc
             this.DoubleBuffered = true;
             this.Name = "DangNhap";
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

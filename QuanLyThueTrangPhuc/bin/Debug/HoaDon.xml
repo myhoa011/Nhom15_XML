@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<HoaDons>
+  <HoaDon>
+    <MaHD>HD01</MaHD>
+    <MaNV>NV02</MaNV>
+    <TenKH>Đặng Thị Mỹ Hòa</TenKH>
+    <NgayTao>21/11/2023</NgayTao>
+    <NgayThue>21/11/2023</NgayThue>
+    <NgayTra>24/11/2023</NgayTra>
+    <TongTien>800000</TongTien>
+  </HoaDon>
+</HoaDons>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ChiTietHoaDons>
+  <ChiTietHoaDon>
+    <MaDH>HD01</MaDH>
+    <MaTP>TP01</MaTP>
+    <soLuongDat>2</soLuongDat>
+    <donGia>100000.0000</donGia>
+  </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <MaDH>HD01</MaDH>
+    <MaTP>TP02</MaTP>
+    <soLuongDat>5</soLuongDat>
+    <donGia>120000.0000</donGia>
+  </ChiTietHoaDon>
+</ChiTietHoaDons>

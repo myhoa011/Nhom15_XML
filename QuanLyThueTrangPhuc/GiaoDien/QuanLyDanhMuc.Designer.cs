@@ -31,9 +31,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_MatKhauMoi = new System.Windows.Forms.TextBox();
+            this.tb_TenDanhMuc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_MatKhauCu = new System.Windows.Forms.TextBox();
+            this.tb_MaDanhMuc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.GV_DanhMuc = new System.Windows.Forms.DataGridView();
             this.bt_ThemDM = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_SuaDM = new System.Windows.Forms.Button();
             this.bt_LMoiDanhMuc = new System.Windows.Forms.Button();
             this.bt_TKDanhMuc = new System.Windows.Forms.Button();
-            this.tb_MaDanhMuc = new System.Windows.Forms.TextBox();
+            this.tb_TK = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_HuyDM = new System.Windows.Forms.Button();
             this.bt_LuuDM = new System.Windows.Forms.Button();
@@ -55,7 +55,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(408, 9);
+            this.label1.Location = new System.Drawing.Point(408, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(384, 46);
             this.label1.TabIndex = 4;
@@ -64,9 +64,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.tb_MatKhauMoi);
+            this.groupBox1.Controls.Add(this.tb_TenDanhMuc);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.tb_MatKhauCu);
+            this.groupBox1.Controls.Add(this.tb_MaDanhMuc);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(112, 209);
@@ -76,13 +76,14 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin danh mục";
             // 
-            // tb_MatKhauMoi
+            // tb_TenDanhMuc
             // 
-            this.tb_MatKhauMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MatKhauMoi.Location = new System.Drawing.Point(369, 112);
-            this.tb_MatKhauMoi.Name = "tb_MatKhauMoi";
-            this.tb_MatKhauMoi.Size = new System.Drawing.Size(284, 30);
-            this.tb_MatKhauMoi.TabIndex = 8;
+            this.tb_TenDanhMuc.Enabled = false;
+            this.tb_TenDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_TenDanhMuc.Location = new System.Drawing.Point(369, 112);
+            this.tb_TenDanhMuc.Name = "tb_TenDanhMuc";
+            this.tb_TenDanhMuc.Size = new System.Drawing.Size(284, 30);
+            this.tb_TenDanhMuc.TabIndex = 8;
             // 
             // label2
             // 
@@ -95,13 +96,14 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label2.TabIndex = 7;
             this.label2.Text = "Tên danh mục";
             // 
-            // tb_MatKhauCu
+            // tb_MaDanhMuc
             // 
-            this.tb_MatKhauCu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MatKhauCu.Location = new System.Drawing.Point(369, 54);
-            this.tb_MatKhauCu.Name = "tb_MatKhauCu";
-            this.tb_MatKhauCu.Size = new System.Drawing.Size(284, 30);
-            this.tb_MatKhauCu.TabIndex = 6;
+            this.tb_MaDanhMuc.Enabled = false;
+            this.tb_MaDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_MaDanhMuc.Location = new System.Drawing.Point(369, 54);
+            this.tb_MaDanhMuc.Name = "tb_MaDanhMuc";
+            this.tb_MaDanhMuc.Size = new System.Drawing.Size(284, 30);
+            this.tb_MaDanhMuc.TabIndex = 6;
             // 
             // label3
             // 
@@ -127,6 +129,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.GV_DanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GV_DanhMuc.Size = new System.Drawing.Size(957, 242);
             this.GV_DanhMuc.TabIndex = 29;
+            this.GV_DanhMuc.SelectionChanged += new System.EventHandler(this.GV_DanhMuc_SelectionChanged);
             // 
             // bt_ThemDM
             // 
@@ -139,6 +142,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_ThemDM.TabIndex = 30;
             this.bt_ThemDM.Text = "Thêm";
             this.bt_ThemDM.UseVisualStyleBackColor = false;
+            this.bt_ThemDM.Click += new System.EventHandler(this.bt_ThemDM_Click);
             // 
             // bt_XoaDM
             // 
@@ -151,6 +155,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_XoaDM.TabIndex = 31;
             this.bt_XoaDM.Text = "Xóa";
             this.bt_XoaDM.UseVisualStyleBackColor = false;
+            this.bt_XoaDM.Click += new System.EventHandler(this.bt_XoaDM_Click);
             // 
             // bt_SuaDM
             // 
@@ -163,6 +168,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_SuaDM.TabIndex = 32;
             this.bt_SuaDM.Text = "Sửa";
             this.bt_SuaDM.UseVisualStyleBackColor = false;
+            this.bt_SuaDM.Click += new System.EventHandler(this.bt_SuaDM_Click);
             // 
             // bt_LMoiDanhMuc
             // 
@@ -175,6 +181,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_LMoiDanhMuc.TabIndex = 36;
             this.bt_LMoiDanhMuc.Text = "Làm mới";
             this.bt_LMoiDanhMuc.UseVisualStyleBackColor = false;
+            this.bt_LMoiDanhMuc.Click += new System.EventHandler(this.bt_LMoiDanhMuc_Click);
             // 
             // bt_TKDanhMuc
             // 
@@ -187,14 +194,15 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_TKDanhMuc.TabIndex = 35;
             this.bt_TKDanhMuc.Text = "Tìm kiếm";
             this.bt_TKDanhMuc.UseVisualStyleBackColor = false;
+            this.bt_TKDanhMuc.Click += new System.EventHandler(this.bt_TKDanhMuc_Click);
             // 
-            // tb_MaDanhMuc
+            // tb_TK
             // 
-            this.tb_MaDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MaDanhMuc.Location = new System.Drawing.Point(248, 168);
-            this.tb_MaDanhMuc.Name = "tb_MaDanhMuc";
-            this.tb_MaDanhMuc.Size = new System.Drawing.Size(284, 28);
-            this.tb_MaDanhMuc.TabIndex = 34;
+            this.tb_TK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_TK.Location = new System.Drawing.Point(248, 168);
+            this.tb_TK.Name = "tb_TK";
+            this.tb_TK.Size = new System.Drawing.Size(284, 28);
+            this.tb_TK.TabIndex = 34;
             // 
             // label4
             // 
@@ -218,6 +226,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_HuyDM.TabIndex = 38;
             this.bt_HuyDM.Text = "Hủy";
             this.bt_HuyDM.UseVisualStyleBackColor = false;
+            this.bt_HuyDM.Visible = false;
+            this.bt_HuyDM.Click += new System.EventHandler(this.bt_HuyDM_Click);
             // 
             // bt_LuuDM
             // 
@@ -230,6 +240,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_LuuDM.TabIndex = 37;
             this.bt_LuuDM.Text = "Lưu";
             this.bt_LuuDM.UseVisualStyleBackColor = false;
+            this.bt_LuuDM.Visible = false;
+            this.bt_LuuDM.Click += new System.EventHandler(this.bt_LuuDM_Click);
             // 
             // QuanLyDanhMuc
             // 
@@ -242,7 +254,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.Controls.Add(this.bt_LuuDM);
             this.Controls.Add(this.bt_LMoiDanhMuc);
             this.Controls.Add(this.bt_TKDanhMuc);
-            this.Controls.Add(this.tb_MaDanhMuc);
+            this.Controls.Add(this.tb_TK);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bt_SuaDM);
             this.Controls.Add(this.bt_XoaDM);
@@ -253,6 +265,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.DoubleBuffered = true;
             this.Name = "QuanLyDanhMuc";
             this.Text = "QuanLyDanhMuc";
+            this.Load += new System.EventHandler(this.QuanLyDanhMuc_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV_DanhMuc)).EndInit();
@@ -265,9 +278,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tb_MatKhauMoi;
+        private System.Windows.Forms.TextBox tb_TenDanhMuc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_MatKhauCu;
+        private System.Windows.Forms.TextBox tb_MaDanhMuc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView GV_DanhMuc;
         private System.Windows.Forms.Button bt_ThemDM;
@@ -275,7 +288,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
         private System.Windows.Forms.Button bt_SuaDM;
         private System.Windows.Forms.Button bt_LMoiDanhMuc;
         private System.Windows.Forms.Button bt_TKDanhMuc;
-        private System.Windows.Forms.TextBox tb_MaDanhMuc;
+        private System.Windows.Forms.TextBox tb_TK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bt_HuyDM;
         private System.Windows.Forms.Button bt_LuuDM;

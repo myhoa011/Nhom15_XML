@@ -49,7 +49,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(429, 9);
+            this.label1.Location = new System.Drawing.Point(433, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(312, 44);
             this.label1.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.GV_HD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GV_HD.Size = new System.Drawing.Size(982, 242);
             this.GV_HD.TabIndex = 19;
-            this.GV_HD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GV_HD_CellContentClick);
+            this.GV_HD.SelectionChanged += new System.EventHandler(this.GV_HD_SelectionChanged);
             // 
             // bt_TimKiem
             // 
@@ -100,6 +100,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_TimKiem.TabIndex = 25;
             this.bt_TimKiem.Text = "Tìm kiếm";
             this.bt_TimKiem.UseVisualStyleBackColor = false;
+            this.bt_TimKiem.Click += new System.EventHandler(this.bt_TimKiem_Click);
             // 
             // bt_LamMoi
             // 
@@ -108,10 +109,11 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_LamMoi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt_LamMoi.Location = new System.Drawing.Point(670, 98);
             this.bt_LamMoi.Name = "bt_LamMoi";
-            this.bt_LamMoi.Size = new System.Drawing.Size(91, 41);
+            this.bt_LamMoi.Size = new System.Drawing.Size(101, 41);
             this.bt_LamMoi.TabIndex = 26;
             this.bt_LamMoi.Text = "Làm mới";
             this.bt_LamMoi.UseVisualStyleBackColor = false;
+            this.bt_LamMoi.Click += new System.EventHandler(this.bt_LamMoi_Click);
             // 
             // bt_TaoHD
             // 
@@ -124,6 +126,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_TaoHD.TabIndex = 27;
             this.bt_TaoHD.Text = "Tạo hóa đơn";
             this.bt_TaoHD.UseVisualStyleBackColor = false;
+            this.bt_TaoHD.Click += new System.EventHandler(this.bt_TaoHD_Click);
             // 
             // GV_ChitietHDQL
             // 
@@ -163,6 +166,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_InHD.TabIndex = 30;
             this.bt_InHD.Text = "In hóa đơn";
             this.bt_InHD.UseVisualStyleBackColor = false;
+            this.bt_InHD.Click += new System.EventHandler(this.bt_InHD_Click);
             // 
             // QuanLyHoaDon
             // 
@@ -183,7 +187,8 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "QuanLyHoaDon";
-            this.Text = "QuanLyHoaDon";
+            this.Text = "Quản lý hóa đơn";
+            this.Load += new System.EventHandler(this.QuanLyHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GV_HD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV_ChitietHDQL)).EndInit();
             this.ResumeLayout(false);

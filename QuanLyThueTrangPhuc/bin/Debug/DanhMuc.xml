@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<DanhMucs>
+  <DanhMuc>
+    <MaDM>1</MaDM>
+    <TenDM>Trang phục trẻ em</TenDM>
+  </DanhMuc>
+  <DanhMuc>
+    <MaDM>2</MaDM>
+    <TenDM>Trang phục người lớn</TenDM>
+  </DanhMuc>
+</DanhMucs>

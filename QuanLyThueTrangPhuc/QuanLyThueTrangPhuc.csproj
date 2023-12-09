@@ -91,11 +91,11 @@
     <Compile Include="GiaoDien\QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GiaoDien\QuanLySanPham.cs">
+    <Compile Include="GiaoDien\QuanLyTrangPhuc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GiaoDien\QuanLySanPham.Designer.cs">
-      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    <Compile Include="GiaoDien\QuanLyTrangPhuc.Designer.cs">
+      <DependentUpon>QuanLyTrangPhuc.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\QuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -136,8 +136,8 @@
     <EmbeddedResource Include="GiaoDien\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GiaoDien\QuanLySanPham.resx">
-      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    <EmbeddedResource Include="GiaoDien\QuanLyTrangPhuc.resx">
+      <DependentUpon>QuanLyTrangPhuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\QuanLyTaiKhoan.resx">
       <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\danhmuc.jpg" />
     <Content Include="Resources\lg1.png" />
     <Content Include="Resources\lg2.png" />
     <Content Include="Resources\user.png" />
