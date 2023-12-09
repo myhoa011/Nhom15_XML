@@ -118,62 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Neutral Fashion Mockup Promotion Facebook Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sanpham" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sanpham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="taikhoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\taikhoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nhanvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lg21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lg22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hoadon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoadon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Simple Luxury Fashion Design Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simple Luxury Fashion Design Presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Neutral Fashion Mockup Promotion Facebook Cover (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Neutral Fashion Mockup Promotion Facebook Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lg21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pink Photo Background Sale Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pink Photo Background Sale Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lg21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lg22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Simple Luxury Fashion Design Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simple Luxury Fashion Design Presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pink Photo Background Sale Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pink Photo Background Sale Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Neutral Fashion Mockup Promotion Facebook Cover (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nhanvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taikhoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taikhoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Neutral Fashion Mockup Promotion Facebook Cover (2)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Neutral Fashion Mockup Promotion Facebook Cover (2)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="danhmuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danhmuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

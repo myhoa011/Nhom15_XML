@@ -1,4 +1,4 @@
-﻿using BAITAPCUOIKY.Class;
+﻿using QuanLyThueTrangPhuc.GiaoDien;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,11 +10,10 @@ namespace QuanLyThueTrangPhuc.Model
 {
     class MatKhau
     {
-        DangNhap dn = new DangNhap();
+        Dangnhap dn = new Dangnhap();
         ConnectFile FileXML = new ConnectFile();
         public bool KiemTraMK(string matKhauCu)
         {
-            //dn.kiemtraTTDN("TaiKhoan.xml", QuanLyChung.tenDNMain, matKhauCu);
             try
             {
                 DataTable dt = new DataTable();

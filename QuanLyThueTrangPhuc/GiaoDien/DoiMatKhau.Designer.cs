@@ -52,7 +52,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1.Size = new System.Drawing.Size(288, 46);
             this.label1.TabIndex = 3;
             this.label1.Text = "Đổi mật khẩu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tb_MatKhauCu
             // 
@@ -61,6 +60,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.tb_MatKhauCu.Name = "tb_MatKhauCu";
             this.tb_MatKhauCu.Size = new System.Drawing.Size(284, 30);
             this.tb_MatKhauCu.TabIndex = 6;
+            this.tb_MatKhauCu.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -80,6 +80,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.tb_MatKhauMoi.Name = "tb_MatKhauMoi";
             this.tb_MatKhauMoi.Size = new System.Drawing.Size(284, 30);
             this.tb_MatKhauMoi.TabIndex = 8;
+            this.tb_MatKhauMoi.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -99,6 +100,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.tb_NhaplaiPass.Name = "tb_NhaplaiPass";
             this.tb_NhaplaiPass.Size = new System.Drawing.Size(284, 30);
             this.tb_NhaplaiPass.TabIndex = 10;
+            this.tb_NhaplaiPass.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -122,6 +124,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_LuuThayDoi.TabIndex = 26;
             this.bt_LuuThayDoi.Text = "Lưu thay đổi";
             this.bt_LuuThayDoi.UseVisualStyleBackColor = false;
+            this.bt_LuuThayDoi.Click += new System.EventHandler(this.bt_LuuThayDoi_Click);
             // 
             // groupBox1
             // 
@@ -153,6 +156,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.DoubleBuffered = true;
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
+            this.Load += new System.EventHandler(this.DoiMatKhau_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

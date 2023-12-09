@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<TaiKhoans>
+  <TaiKhoan>
+    <MaNV>NV01</MaNV>
+    <MatKhau>123</MatKhau>
+    <Quyen>1</Quyen>
+  </TaiKhoan>
+  <TaiKhoan>
+    <MaNV>NV02</MaNV>
+    <MatKhau>321</MatKhau>
+    <Quyen>1</Quyen>
+  </TaiKhoan>
+  <TaiKhoan>
+    <MaNV>NV03</MaNV>
+    <MatKhau>321</MatKhau>
+    <Quyen>2</Quyen>
+  </TaiKhoan>
+</TaiKhoans>

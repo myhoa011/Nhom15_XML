@@ -63,7 +63,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(418, 19);
+            this.label1.Location = new System.Drawing.Point(420, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 44);
             this.label1.TabIndex = 1;
@@ -79,7 +79,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label2.Size = new System.Drawing.Size(117, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã hóa đơn:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tbMaHD
             // 
@@ -118,7 +117,6 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label4.Size = new System.Drawing.Size(89, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Ngày tạo:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -139,6 +137,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.cbb_tenTP.Name = "cbb_tenTP";
             this.cbb_tenTP.Size = new System.Drawing.Size(284, 28);
             this.cbb_tenTP.TabIndex = 10;
+            this.cbb_tenTP.SelectedIndexChanged += new System.EventHandler(this.cbb_tenTP_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -149,13 +148,15 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 24);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Mã nhân viên:";
+            this.label6.Text = "Mã nhân viên:";
             // 
             // tb_MaNV
             // 
+            this.tb_MaNV.Enabled = false;
             this.tb_MaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_MaNV.Location = new System.Drawing.Point(173, 199);
             this.tb_MaNV.Name = "tb_MaNV";
+            this.tb_MaNV.ReadOnly = true;
             this.tb_MaNV.Size = new System.Drawing.Size(284, 28);
             this.tb_MaNV.TabIndex = 12;
             // 
@@ -191,12 +192,12 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // 
             // tb_DonGia
             // 
-            // tb_DonGia
-            // 
+            this.tb_DonGia.Enabled = false;
             this.tb_DonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_DonGia.Location = new System.Drawing.Point(678, 202);
+            this.tb_DonGia.Location = new System.Drawing.Point(710, 202);
             this.tb_DonGia.Name = "tb_DonGia";
-            this.tb_DonGia.Size = new System.Drawing.Size(200, 28);
+            this.tb_DonGia.ReadOnly = true;
+            this.tb_DonGia.Size = new System.Drawing.Size(235, 28);
             this.tb_DonGia.TabIndex = 21;
             // 
             // label10
@@ -213,10 +214,10 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // dt_NgayThue
             // 
             this.dt_NgayThue.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayThue.Location = new System.Drawing.Point(678, 36);
+            this.dt_NgayThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.dt_NgayThue.Location = new System.Drawing.Point(710, 31);
             this.dt_NgayThue.Name = "dt_NgayThue";
-            this.dt_NgayThue.Size = new System.Drawing.Size(200, 26);
+            this.dt_NgayThue.Size = new System.Drawing.Size(235, 28);
             this.dt_NgayThue.TabIndex = 19;
             // 
             // label9
@@ -233,10 +234,10 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // dt_NgayTra
             // 
             this.dt_NgayTra.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayTra.Location = new System.Drawing.Point(678, 88);
+            this.dt_NgayTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.dt_NgayTra.Location = new System.Drawing.Point(710, 83);
             this.dt_NgayTra.Name = "dt_NgayTra";
-            this.dt_NgayTra.Size = new System.Drawing.Size(200, 26);
+            this.dt_NgayTra.Size = new System.Drawing.Size(235, 28);
             this.dt_NgayTra.TabIndex = 17;
             // 
             // label8
@@ -255,7 +256,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.tb_SoLuongThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_SoLuongThue.Location = new System.Drawing.Point(710, 146);
             this.tb_SoLuongThue.Name = "tb_SoLuongThue";
-            this.tb_SoLuongThue.Size = new System.Drawing.Size(168, 28);
+            this.tb_SoLuongThue.Size = new System.Drawing.Size(235, 28);
             this.tb_SoLuongThue.TabIndex = 15;
             // 
             // label7
@@ -272,12 +273,12 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             // dt_NgayTao
             // 
             this.dt_NgayTao.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_NgayTao.Location = new System.Drawing.Point(173, 255);
+            this.dt_NgayTao.Enabled = false;
+            this.dt_NgayTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.dt_NgayTao.Location = new System.Drawing.Point(173, 253);
             this.dt_NgayTao.Name = "dt_NgayTao";
-            this.dt_NgayTao.Size = new System.Drawing.Size(284, 26);
+            this.dt_NgayTao.Size = new System.Drawing.Size(284, 28);
             this.dt_NgayTao.TabIndex = 13;
-            this.dt_NgayTao.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // bt_themTP
             // 
@@ -290,7 +291,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_themTP.TabIndex = 25;
             this.bt_themTP.Text = "Thêm trang phục";
             this.bt_themTP.UseVisualStyleBackColor = false;
-            this.bt_themTP.Click += new System.EventHandler(this.button2_Click);
+            this.bt_themTP.Click += new System.EventHandler(this.bt_themTP_Click);
             // 
             // bt_LuuHD
             // 
@@ -303,6 +304,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_LuuHD.TabIndex = 24;
             this.bt_LuuHD.Text = "Lưu";
             this.bt_LuuHD.UseVisualStyleBackColor = false;
+            this.bt_LuuHD.Click += new System.EventHandler(this.bt_LuuHD_Click);
             // 
             // bt_HoaDonMoi
             // 
@@ -315,6 +317,7 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.bt_HoaDonMoi.TabIndex = 23;
             this.bt_HoaDonMoi.Text = "Hóa đơn mới";
             this.bt_HoaDonMoi.UseVisualStyleBackColor = false;
+            this.bt_HoaDonMoi.Click += new System.EventHandler(this.bt_HoaDonMoi_Click);
             // 
             // GV_ChiTietHD
             // 
@@ -346,7 +349,9 @@ namespace QuanLyThueTrangPhuc.GiaoDien
             this.Controls.Add(this.bt_HoaDonMoi);
             this.DoubleBuffered = true;
             this.Name = "ChiTietHoaDon";
-            this.Text = "ChiTietHoaDon";
+            this.Text = "Chi tiết hóa đơn";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ChiTietHoaDon_FormClosed);
+            this.Load += new System.EventHandler(this.ChiTietHoaDon_Load);
             this.gb_ThongTinHD.ResumeLayout(false);
             this.gb_ThongTinHD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV_ChiTietHD)).EndInit();

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<NhanViens>
+  <NhanVien>
+    <MaNV>NV01</MaNV>
+    <TenNV>Lê Văn A</TenNV>
+    <DiaChi>34 Điện Biên Phủ</DiaChi>
+    <SDT>0123456789</SDT>
+    <Email>myhoa@gmail.com</Email>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV02</MaNV>
+    <TenNV>Nguyễn Ngọc B</TenNV>
+    <DiaChi>50 Phan Thanh</DiaChi>
+    <SDT>0258963147</SDT>
+    <Email>camly@gmail.com</Email>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV03</MaNV>
+    <TenNV>Võ Bích C</TenNV>
+    <DiaChi>48 Cao Thắng</DiaChi>
+    <SDT>0123654789</SDT>
+    <Email>bichtram@gmail.com</Email>
+  </NhanVien>
+</NhanViens>

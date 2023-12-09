@@ -1,5 +1,4 @@
-﻿using BAITAPCUOIKY.Class;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -45,16 +44,7 @@ namespace QuanLyThueTrangPhuc.Model
         }
         public void xoaDM(string MaDM)
         {
-            /*
-                        XDocument doc = XDocument.Load("NhanVien.xml");
-                        foreach (XElement x in doc.Descendants("_x0027_NhanVien_x0027_"))
-                        {
-                            if (x.Element("maNV").Value.ToString().Equals(MaNhanVien))
-                                x.Element("maNV").Remove();
-                        }
-                        doc.Save("NhanVien.xml");
-            */
-            Fxml.Xoa("DanhMuc.xml", "DanhMuc", "MaMD", MaDM);
+            Fxml.Xoa("DanhMuc.xml", "DanhMuc", "MaDM", MaDM);
         }
 
         public bool checkEmpty(string MaDM, string TenDM)
@@ -64,6 +54,13 @@ namespace QuanLyThueTrangPhuc.Model
                 return false;
             }
             return true;
+        }
+
+        public DataTable LoadMaDMP()
+        {
+            DataTable dt = new DataTable();
+            dt = Fxml.HienThi("DanhMuc.xml");
+            return dt;
         }
     }
 }

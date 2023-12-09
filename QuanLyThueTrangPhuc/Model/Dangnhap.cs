@@ -6,11 +6,10 @@ using System.Xml;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
-using BAITAPCUOIKY.Class;
 
 namespace QuanLyThueTrangPhuc.Model
 {
-    class DangNhap
+    class Dangnhap
     {
         ConnectFile FileXML = new ConnectFile();
         public bool kiemtraTTDN(string duongdan, string MaNhanVien, string MatKhau)
@@ -21,7 +20,9 @@ namespace QuanLyThueTrangPhuc.Model
                 dt = FileXML.HienThi(duongdan);
                 dt.DefaultView.RowFilter = "MaNV ='" + MaNhanVien + "' AND MatKhau ='" + MatKhau + "'";
                 if (dt.DefaultView.Count > 0)
+                {
                     return true;
+                }    
             }
             catch (Exception e)
             {

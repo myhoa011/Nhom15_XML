@@ -1,5 +1,4 @@
-﻿using BAITAPCUOIKY.Class;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -55,7 +54,7 @@ namespace QuanLyThueTrangPhuc.Model
         public void suaTP(string maTP, string tenTP, string donGia, string soLuong, string MaDM)
         {
             string noiDung = "<MaTP>" + maTP + "</MaTP>" +
-                    "<TenTP>" + tenTP + "</TenSP>" +
+                    "<TenTP>" + tenTP + "</TenTP>" +
                     "<donGia>" + donGia + "</donGia>" +
                     "<soLuong>" + soLuong + "</soLuong>" +
                     "<MaDM>" + MaDM + "</MaDM>";
