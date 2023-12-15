@@ -1,4 +1,4 @@
-﻿drop database if exists dbQUANLYTHUETRANGPHUC
+drop database if exists dbQUANLYTHUETRANGPHUC
 go
 create database dbQUANLYTHUETRANGPHUC
 go
@@ -16,13 +16,13 @@ CREATE TABLE TaiKhoan(
 	MaNV varchar(30) PRIMARY KEY,
 	MatKhau varchar(50) NOT NULL,
 	Quyen int NOT NULL,
-	CONSTRAINT FK_NVTK FOREIGN KEY (maNV) REFERENCES NhanVien(maNV)
+	CONSTRAINT FK_NVTK FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV)
 	on update cascade
 	on delete cascade
 )
 go
 CREATE TABLE DanhMuc(
-	MaDM int primary key,
+	MaDM varchar(30) primary key,
 	TenDM nvarchar(50) NOT NULL
 )
 
@@ -31,7 +31,7 @@ CREATE TABLE TrangPhuc(
 	TenTP nvarchar(50) NOT NULL,
 	donGia int NULL,
 	soLuong int NULL,
-	MaDM int CONSTRAINT FK_DMTP FOREIGN KEY REFERENCES DanhMuc(MaDM)
+	MaDM varchar(30) CONSTRAINT FK_DMTP FOREIGN KEY REFERENCES DanhMuc(MaDM)
 	on update cascade
 	on delete cascade 
 )
@@ -53,7 +53,7 @@ CREATE TABLE HoaDon(
 
 go
 CREATE TABLE ChiTietHoaDon(
-	maDH varchar(30)  not null CONSTRAINT FK_DH FOREIGN KEY REFERENCES HoaDon(MaHD)
+	MaDH varchar(30)  not null CONSTRAINT FK_DH FOREIGN KEY REFERENCES HoaDon(MaHD)
 	on update cascade
 	on delete cascade,
 	MaTP varchar(30)  not null CONSTRAINT FK_SPDH FOREIGN KEY REFERENCES TrangPhuc(MaTP)
@@ -63,7 +63,7 @@ CREATE TABLE ChiTietHoaDon(
 		CONSTRAINT check_SoLuongDat check(soLuongDat >=0 ),
 	donGia money  not null
 		CONSTRAINT check_DonGia check( donGia>=0),
-	PRIMARY KEY (maDH, MaTP)
+	PRIMARY KEY (MaDH, MaTP)
 )
 go
 INSERT INTO DanhMuc values
